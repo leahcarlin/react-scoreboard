@@ -1,0 +1,47 @@
+@import "../style/config";
+
+.Player {
+  display: block; // instead of list-item
+  background: #dde79c;
+  position: relative;
+
+  p {
+    margin: 0;
+    padding: 0.3rem 0.7rem 0.7rem;
+  }
+
+  .percentage_coloring {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.4rem;
+    background: $primary; // fallback for if the browser does not support gradients
+    background: linear-gradient(90deg, #e6f14a, #778321);
+    transition: all 0.2s ease;
+  }
+  &:hover .percentage_coloring {
+    transform: scale(1, 2);
+    background: linear-gradient(90deg, #3f4350, #b3b6d1);
+  }
+
+  button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, #778321, #e6f14a);
+    font-family: inherit;
+    transition: all 0.2s ease;
+    border-radius: 5px;
+
+    // other styles
+
+    &:hover {
+      background: linear-gradient(90deg, #3f4350, #b3b6d1);
+    }
+
+    &:active {
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.Scoreboard {
+  ul {
+    padding: 0;
+  }
+
+  button {
+    margin: 5px 10px 5px 10px;
+    background: linear-gradient(90deg, #778321, #e6f14a);
+    font-family: inherit;
+    transition: all 0.2s ease;
+    border-radius: 5px;
+
+    &:hover {
+      background: linear-gradient(90deg, #3f4350, #b3b6d1);
+    }
+
+    &:active {
+      color: white;
+      box-shadow: 10px 5px 5px black;
+    }
+  }
+}
